@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital@0;1&display=swap');
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caixa h1 {
+    margin-left: 10%;
+}
+
+nav {
+    width: 50%;
+}
+
+.links-cabecalho {
+    display: flex;
+}
+
+nav li {
+    margin: 5%;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a33232
+}
+
+body {
+    font-family: "Roboto";
+}
+
+.produtos {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    height: 25em;
+    vertical-align: middle;
+    margin: 0 3%;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    border: solid 1px #000000;
+    border-radius: 10px;
+    
+}
+
+.produtos li:hover {
+    color: #a33232;
+    border: solid 2px #a33232;
+    border-radius: 20px;
+}
+
+.produtos li:hover h2 {
+    font-size: 35px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos img {
+    width: 100%;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+footer {
+    text-align: center;
+    background-image: url("../imagens/bg.jpg");
+    padding: 40px 0;
+    color: #FFFFFF;
+}
+
+footer img {
+    width: 5vw;
+}
+
+footer p {
+    display: inline;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 480px) {
+   
+    header, .caixa, .principal, .beneficios, footer {
+        width: auto;
+    }
+
+    .caixa {
+        flex-direction: column;
+        align-items: initial;
+        width: 30%;
+        margin: 2% auto;
+        justify-content: space-around;
+    }
+
+    .caixa h1{
+        margin: 2% auto;
+    }
+
+    .links-cabecalho {
+        text-align: center;
+        justify-content: space-evenly;
+        width: 200%;
+    }
+
+    nav a {
+        font-size: 35px;
+    }
+
+    body {
+        width: fit-content;
+    }
+
+    .produtos li {
+        display: block;
+        width: 65%;
+        height: 900px;
+        margin: 5% auto;
+        border: solid 2px #000000;
+        border-radius: 6%;
+    }
+
+    .produtos h2 {
+        font-size: 5em;
+    }
+    
+    .produto-descricao {
+        font-size: 40px;
+    }
+    
+    .produto-preco {
+        font-size: 50px;
+        margin: 20px 0;
+        padding: 4%;
+    }
+
+    footer img {
+        width: 20vw;
+    }
+    
+    footer p {
+        font-size: 30px;
+    }
+
+}

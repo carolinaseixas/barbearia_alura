@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital@0;1&display=swap');
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caixa h1 {
+    margin-left: 10%;
+}
+
+nav {
+    width: 50%;
+}
+
+.links-cabecalho {
+    display: flex;
+}
+
+nav li {
+    margin: 5%;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a33232
+}
+
+body {
+    font-family: "Roboto";
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    margin: 3% 5%;
+    display: inline-block;
+    width: 250vw;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 5px;
+    width: 60%;
+}
+
+.espaco {
+    margin: 20px 0;
+}
+
+
+.select-horario {
+    border-radius: 5px;
+    width: 10%;
+    text-align: center;
+    font-size: 16px;
+    padding: 0.5%;
+}
+
+.enviar {
+    width: 20%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.enviar:hover {
+    background: darkorange;
+    cursor: pointer;
+}
+
+table {
+    margin-right: 20%;
+    display: inline-block;
+    width: 60vw;
+}
+
+thead {
+    background: #555555;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+footer {
+    text-align: center;
+    background-image: url("../imagens/bg.jpg");
+    padding: 40px 0;
+    color: #FFFFFF;
+}
+
+footer img {
+    width: 5vw;
+}
+
+footer p {
+    display: inline;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 480px) {
+      
+    .caixa {
+        flex-direction: column;
+        align-items: initial;
+        width: 30%;
+        margin: 2% auto;
+        justify-content: space-around;
+    }
+
+    .caixa h1{
+        margin: 2% auto;
+        width: 5%;
+    }
+
+    .links-cabecalho {
+        text-align: center;
+        justify-content: space-evenly;
+        width: 200%;
+    }
+
+    nav a {
+        font-size: 35px;
+    }
+
+    main {
+        display: block;
+    }
+
+    form {
+        width: 120%;
+        margin: 2% 5% 5% 10%;
+    }
+
+    form label {
+        margin: 8% 0 2% 0;
+        font-size: 32px;
+    }
+    
+    .input-padrao {
+        padding: 2%;
+        width: 75%;
+        margin: 3% 3% 3% 1%;
+        font-size: 30px;
+    }
+
+    legend {
+        font-size: 32px;
+    }
+
+    .select-horario {
+        width: 25%;
+        font-size: 20px;
+    }
+
+    .enviar {
+        width: 40%;
+        font-size: 32px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 30px;
+        margin: 5% 25%;
+        padding: 5%;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    footer img {
+        width: 15vw;
+    }
+    
+    footer p {
+        font-size: 20px;
+    }
+
+}
